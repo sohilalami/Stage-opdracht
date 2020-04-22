@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sneaker Space | Uw online sneaker store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="authors" content="Taurese Usman & Sohil Alami">
+  </head>
+  <body class="body1">
+
+
+<!-- De Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="logo.png" width="100px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Subscriptions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Merch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+<!-- De slider -->
+    <div id="section1">
+    <div class="slider">
+    <div class="w3-content w3-section" style="max-width:500px">
+      <img class="mySlides" src="sneakers1.png" style="width:100%">
+      <img class="mySlides" src="sneakers2.png" style="width:100%">
+    </div>
+  </div>
+</div>
+
+
+<div id="section2" style="background-color:#ffffff;">
+  <h2 style="text-align: center;">How It Works</h2>
+
+  <div class="row-1" style="text-align: center;">
+    <div class="column" style="background-color:#ffffff;">
+      <img src="form.png" width="80px;"></img>
+      <h3>Sign Up</h2>
+      <p>With 3 very easy steps you can get sneakers every month. All you have to do is regidter for free on our site.</p>
+    </div>
+    <div class="column" style="background-color:#ffffff;">
+      <img src="https://image.flaticon.com/icons/png/512/88/88746.png" width="80px;"></img>
+      <h3>Choose your style</h2>
+      <p>Just let us know what your size is, what your favorite color is and what style sneakers suite you best.</p>
+    </div>
+    <div class="column" style="background-color:#ffffff;">
+      <img src="https://i.pinimg.com/originals/a0/86/47/a08647cec486718eaf66a38d6f6f8784.png" width="80px;"></img>
+      <h3>Wait for your suprise</h2>
+      <p>Wait for your package, and let us suprise your every time with a new and unique set of sneakers that suits you.</p>
+    </div>
+  </div>
+</div>
+
+<div id="section3">
+  <div class="login-box">
+     <div class="lb-header">
+       <a href="#" id="signup-box-link">Sign Up</a>
+     </div>
+
+     <form class="email-signup">
+       <div class="u-form-group">
+         <input type="email" placeholder="Your Name"/>
+       </div>
+       <div class="u-form-group">
+         <input type="password" placeholder="Your Email"/>
+       </div>
+       <div class="u-form-group">
+         <input type="password" placeholder="Select Your Shoe Size"/>
+       </div>
+       <div class="u-form-group">
+         <input type="password" placeholder="Select Favorite Color"/>
+       </div>
+       <p style="color: grey; font-size: 10px;">
+         *Next Step and Price will be sent to your email
+       </p>
+       <div class="u-form-group">
+         <button>Sign Up</button>
+       </div>
+     </form>
+   </div>
+</div>
+
+<div id="section4" style="background-color: #ffffff;">
+ <div class="row2">
+<h2>Different Brands</h2>
+  <div class="column2">
+    <img src="shoe-logos/fila.png" alt="Snow">
+  </div>
+  <div class="column2">
+    <img src="shoe-logos/nike.png" alt="Forest" >
+  </div>
+  <div class="column2">
+    <img src="shoe-logos/jordan.png" alt="Mountains">
+  </div>
+    <div class="column2">
+    <img src="shoe-logos/vans.png" alt="Snow">
+  </div>
+  <div class="column2">
+    <img src="shoe-logos/converse.png" alt="Forest" width="100" height="100">
+  </div>
+  <div class="column2">
+    <img src="shoe-logos/adidas.png" alt="Mountains">
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+  <script>
+  ///Slider///
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+  </script>
+</html>
